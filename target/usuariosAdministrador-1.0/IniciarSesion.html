@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosLogin.css">
+    <link rel="icon"  href="imagenes/librosAnimado.ico">
+   
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <header>
+       
+            <a href="index.html" class="logoLibro">
+                <img id="librosCabecera" src="imagenes/libros.png" alt="libros">
+                <span id="textoFondo">Biblioteca Digital</span>
+            </a>
+        
+    </header>
+   
+    <div class="buzon">
+        <!-- Mensaje de éxito -->
+        <div id="mensajeExito" class="alert alert-success hidden">
+            Registro exitoso
+          
+        </div>
+        <!-- Mensaje de error -->
+        <div id="mensajeError" class="alert alert-danger hidden">
+            Error al registrarse
+          
+        </div>
+        <!-- Email duplicado -->
+        <div id="mensajeEmail" class="alert alert-danger hidden">
+            El email ya se encuentra registrado
+          
+        </div>
+        <!-- Error al loggearse -->
+        <div id="errorMensaje" class="alert alert-danger hidden">
+
+        </div>
+    </div>
+    
+
+
+    <main>
+        <div class="Contenedor">
+
+            <div class="recuadroFondo">
+                <div class="login">
+                    <h2>¿Ya tienes una cuenta?</h2>
+                    <p>Inicia sesión para entrar en nuestra página</p>
+                    <button id="botonIngresar">Ingresar</button>
+                </div>
+                <div class="Registro">
+                    <h2>¿Aún no tienes cuenta?</h2>
+                    <p>Registrate para pertenecer a esta comunidad.</p>
+                    <p>Solo tomará unos segundos</p>
+                    <button id="botonRegistrarse">Registrarse</button>
+                </div>
+            </div>
+
+        <div class="contenedorFormulario">
+           
+            <form action="/BibliotecaDigital/loginServlet" id="fLogin" class="formLogin" method="post">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="email" placeholder="Ingrese su email" name="email"> 
+            <span id="email-error" class="error"></span>
+            <div class="contenedorOjo">
+            <input type="password" id="password" placeholder="Ingrese su contraseña" name="pass">
+            <img src="imagenes/pass/ojo-cruzado.png" id="passOjo" class="ojo" onclick=teVeo()>
+            </div>
+            <span id="password-error" class="error"></span>
+            <button type="submit" id="bIngresar">Ingresar</button>
+            </form>
+           
+            <form action="/BibliotecaDigital/registro" id="fRegistro" class="formRegistro" method="post">
+            <h2>Registrarse</h2>
+           <input type="text" id="nombre" placeholder="Nombre" name="nombre">
+           <span id="nombre-error" class="error"></span>
+           <input type="text" id="apellido" placeholder="Apellido" name="apellido">
+           <span id="apellido-error" class="error"></span>
+           <input type="date" id="fecha" placeholder="Fecha Nacimiento dd/mm/aaaa" name="fechaNacimiento">
+           <span id="fecha-error" class="error"></span>
+           <input type="text" id="R_email" placeholder="Email" name="email">
+           <span id="R_email-error" class="error"></span>
+           <div class="contenedorOjo">
+           <input type="password" id="rPassword" placeholder="Contraseña" name="password">
+           <img src="imagenes/pass/ojo-cruzado.png" id="rPassOjo" class="ojo" onclick=teVeoRegistro()>
+           <!-- <span id="rPassword-error" class="error"></span> -->
+           </div>
+           <span id="rPassword-error" class="error"></span>
+            <select name="pais" id="pais" >
+                <option value="nada">Seleccione su país de origen</option>
+                <option value="AR">Argentina</option>
+                <option value="BO">Bolivia</option>
+                <option value="BR">Brasil</option>
+                <option value="CH">Chile</option>
+                <option value="CO">Colombia</option>
+                <option value="EC">Ecuador</option>
+                <option value="PY">Paraguay</option>
+                <option value="PE">Perú</option>
+                <option value="UY">Uruguay</option>
+                <option value="VE">Venezuela</option>
+                <option value="OTR">Otro</option>   
+            </select>
+            <span id="pais-error" class="error"></span>
+        <div class="terminos">
+            <input type="checkbox" id="checkbox" class="check">
+            <label for="terminos" class="textoCheck">Acepto términos y condiciones</label>
+        </div>
+        <span id="checkbox-error" class="error"></span>
+        <button type="submit" id="bRegistrarse">Registrarse</button>
+        </form>
+
+        </div> 
+        </div>
+        
+       
+        
+    </main>
+    <script src="scriptSesion.js"></script>
+    <script src="scriptRegistro.js"></script>
+   
+    <script src="scriptMensajeRegistro.js"></script>
+   
+
+</body>
+</html>

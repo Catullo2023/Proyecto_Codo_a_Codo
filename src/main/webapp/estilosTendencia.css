@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#97d0fc;
+   
+    /* background-size: cover; */
+    background-repeat: repeat;
+    background-attachment: fixed;
+   
+   
+}
+/*--------------------------------------header-----------------------------------------------------*/
+header{
+    background-image: url(imagenes/Main.jpg);
+    /* background-size: cover;  */
+    width: 100%;
+    height: 11vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border: 2px solid #002847;
+    & #librosCabecera{
+        height: 45px;  
+        margin-right: 5px;
+    }
+    & .logoLibro{
+         margin:5px 5px; 
+       width: 18%;
+           display:flex; 
+          text-decoration: none;
+          color: #3a0a07;
+          font-size: 1.2rem;
+          font-weight: 500;
+          -webkit-text-stroke-width: 1px;
+           justify-content: flex-start;
+           align-items: center;
+          & #textoFondo{
+            
+                background-color: rgba(255, 255, 255, 0.8); 
+                padding: 5px 10px; 
+                border-radius: 5px; 
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            
+           }
+     }
+    }
+
+/*------------------------------------------ Tendencias--------------------------------------------------- */
+main{
+    
+    .TituloTendencia{
+        color: #002847;
+        margin: 20px auto;
+        text-align: center;
+ 
+        h2{
+         margin-bottom: 10px;
+         font-size: 2em; 
+     font-weight: bold; 
+     
+     text-shadow: 
+         1px 1px 0px #fff,  
+         2px 2px 0px #aaa,  
+         3px 3px 0px #999,  
+         4px 4px 0px #888,  
+         5px 5px 0px #777;
+        }
+ }
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+
+
+.tendencias {
+    flex: 1; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+
+.tendenciasLibros {
+    width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+       overflow: hidden; /*Evitar desbordamiento */
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+       text-align: center;  
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 10px; 
+      background-color: #f9f9f9;
+      cursor: pointer; 
+      &:hover {
+          transform: scale(1.05); /* Agrandar al pasar el mouse */
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+
+ img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+ .tituloLibro {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+}
+}
+
+/*-----------------------------------------Aside----------------------------------------------------*/
+
+.alCostado{
+    max-width: 250px; 
+    background-color: rgba(249, 249, 249, 0.7);
+    border: 1px solid #ddd;
+    padding: 20px;
+   
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* backdrop-filter: blur(10px); */
+    box-sizing: border-box;
+    overflow-y: auto; 
+    height: 500px;
+    margin:660px 20px ; 
+    h3{
+    background-color: #002847;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    }
+    margin: 10px;
+    .LibrosBaudelaire{
+       
+        .Baudelaire{
+            list-style: none;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ddd;
+            .tituloImagen{
+              display: flex;
+             align-items: center;
+              margin: 10px 0px;
+             
+              .LibroBaudelaire{
+                 color: #002847;
+              font-style: italic;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              }
+              img{
+                height: 25px;
+                width: 20px;
+                border-radius: 50%;
+                margin-left: 5px;
+                margin-right: 5px;
+                border: 1px solid #002847;
+
+              }
+
+            }
+            p{
+                text-align: justify;
+                line-height: 1.2;
+                /* margin: 10px 0;  */
+                padding: 10px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+                
+            }
+        }
+    }
+}
+}
+}

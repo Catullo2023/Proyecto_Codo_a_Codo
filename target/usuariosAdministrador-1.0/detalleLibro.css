@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#97d0fc;
+   
+    /* background-size: cover; */
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+/*--------------------------------------header-----------------------------------------------------*/
+header{
+    background-image: url(imagenes/Main.jpg);
+    /* background-size: cover;  */
+    width: 100%;
+    height: 11vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border: 2px solid #002847;
+    & #librosCabecera{
+        height: 45px;  
+        margin-right: 5px;
+    }
+    & .logoLibro{
+         margin:5px 5px; 
+       width: 18%;
+           display:flex; 
+          text-decoration: none;
+          color: #3a0a07;
+          font-size: 1.2rem;
+          font-weight: 500;
+          -webkit-text-stroke-width: 1px;
+           justify-content: flex-start;
+           align-items: center;
+          & #textoFondo{
+            
+                background-color: rgba(255, 255, 255, 0.8); 
+                padding: 5px 10px; 
+                border-radius: 5px; 
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            
+           }
+     }
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+/* .libro-detalle {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.libro-detalle img {
+    max-width: 100%;
+}
+.libro-detalle h2 {
+    margin-top: 0;
+} */

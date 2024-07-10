@@ -1,0 +1,12 @@
+Conexion\ConexionBD.class
+Datos\LibrosDatos.class
+Entidades\Usuario.class
+Control\RegistroServlet.class
+Control\GestionUsuariosServlet.class
+Control\CerrarSesion.class
+Entidades\Libros.class
+Datos\Login.class
+Datos\UsuarioDatos.class
+Control\LibrosServlet.class
+Control\detalleServlet.class
+Control\LoginServlet.class

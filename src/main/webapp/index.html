@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- el favicon es animado en mozila -->
+    <link rel="icon"  href="imagenes/librosAnimado.ico">
+    <title>Proyecto</title>
+</head>
+<body>
+    <header class="cabecera">
+       <nav class="navegacion">
+        <a href="index.html" class="logoLibro">
+            <img id="librosCabecera" src="imagenes/libros.png" alt="libros">
+            <span>Biblioteca Digital</span>
+        </a>
+        <ul class="listaNav">
+            
+            <!-- <li class="listItem"><a href="tendencias.html" class="linkNav">Tendencias</a></li> -->
+           
+            <li class="listItem"><a href="#" class="linkNav">Aportar</a></li>
+            <li class="listItem"><a href="IniciarSesion.html" class="linkNav Sesión">Iniciar Sesión</a></li> 
+        </ul>
+       </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <!-- <section class="contenedor_Titulo_Buscador"> -->
+        <section class="principal">
+        <h1>Tu biblioteca Digital</h1>
+        <p>Bienvenido a <strong>Biblioteca Digital</strong>, un lugar donde podrás consultar por textos digitales. Además es una prueba de diseño web de algún friki que quiere conseguir algo extra</p>
+        <a href="IniciarSesion.html">Registrarse</a>
+     </section>
+  <!-- Buscador -->
+     <section class="buscador">
+      <hr>
+       <form class="formularioBuscador">
+          <input class="inputBuscador" type="text" placeholder="Texto a buscar...">
+          <input id="boton" type="submit" value="Buscar">
+        <label id="ordenarPor">Ordenar por:</label>
+        <select id="items">
+        <option value="titulo">Título</option>
+        <option value="genero">Género</option>
+        <option value="autor">Nombre del autor</option>
+       
+      </select>
+       </form>
+      <hr>
+     </section>
+   <!-- </section> -->
+   <section class="elCostado_Tendencias">
+     <aside class="deCote">
+      <h3>Lo más leído</h3>
+      <ul class="loMasLeido">
+       
+      </ul>
+     
+    </aside>
+   
+  <!-- tendencias -->
+     <section class="tendencias">
+    
+     </section>
+     
+   </section> 
+   <div class="botones">
+     <button class="bot_anterior">Anterior</button>
+     <button class="bot_siguiente">Siguiente</button>
+     </div>
+  </main>
+  
+  <footer class="pie">
+  <ul class="listaNavFoot">
+            <li class="listItemFoot"><a href="preguntas.html" class="linkNavFoot">Preguntas Frecuentes</a></li>
+           
+            <!-- <li class="listItemFoot"><a href="gestionUsuarios.html" class="linkNavFoot">Administrador</a></li> -->
+         </ul>
+            <div class="autor">
+            Desarrollado por:<a href="https://github.com/Catullo2023" class="catullo">Catullo</a>
+            </div>
+  
+  </footer>
+  <script src="librosGoogleAPI.js"></script>
+  <script src="sesionActiva.js"></script>
+</body>
+</html>
+
+<!-- <li class="listItem"><a href="comentarios.html" class="linkNav">Comentarios de usuarios</a></li> -->
