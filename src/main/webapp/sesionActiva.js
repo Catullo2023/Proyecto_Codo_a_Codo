@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const loginItem = document.querySelector('.linkNav.Sesión');
        const navFootList = document.querySelector('.listaNavFoot');
         if (data.loggedIn) {
-            console.log("LoggedIn"); // Verificar si la sesión está siendo establecida correctamente
+            console.log("LoggedIn"); 
             loginItem.textContent = `Cerrar Sesión (${data.usuario})`;
             loginItem.href = "javascript:void(0);"; // Evitar la recarga de la página
             loginItem.addEventListener("click", function() {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
            // navList.appendChild(comentariosItem);
            navList.insertBefore(comentariosItem, loginItem.parentNode);
         } else {
-            console.log("Not LoggedIn"); // Verificar si la sesión no está siendo establecida correctamente
+            console.log("Not LoggedIn"); 
             loginItem.textContent = "Iniciar Sesión";
             loginItem.href = "IniciarSesion.html";
         }
