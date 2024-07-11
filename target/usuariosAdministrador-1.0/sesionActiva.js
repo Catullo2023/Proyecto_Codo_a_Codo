@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log(data); 
         const navList = document.querySelector('.listaNav');
         const loginItem = document.querySelector('.linkNav.Sesión');
-
+       const navFootList = document.querySelector('.listaNavFoot');
         if (data.loggedIn) {
             console.log("LoggedIn"); // Verificar si la sesión está siendo establecida correctamente
             loginItem.textContent = `Cerrar Sesión (${data.usuario})`;
@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     credentials: 'include'
                 })
                 .then(() => {
-                    window.location.href = "IniciarSesion.html"; // Redirigir al inicio de sesión después de cerrar sesión
+                    window.location.href = "IniciarSesion.html"; 
                 });
             });
             if (data.usuario === "jere@jere.com") {
                 const adminItem = document.createElement('li');
                 adminItem.classList.add('listItemFoot');
                 adminItem.innerHTML = '<a href="gestionUsuarios.html" class="linkNavFoot">Administrador</a>';
-                navList.appendChild(adminItem);
+                navFootList.appendChild(adminItem); 
             }
 
             const comentariosItem = document.createElement('li');
